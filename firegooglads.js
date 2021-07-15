@@ -1,4 +1,4 @@
-// 用于万维广告流量主添加 Google Adsense 作为 backfill ads 的代码，欢迎改进/提 PR
+// 用于万维广告流量主添加 Google Adsense 作为 backfill ads 的代码，暂时不支持 SPA 站点（仅支持 SPA 的首次加载和新窗口打开），欢迎改进/提 PR
 // 用法详见：https://wwads.cn/help/publishers/backfill-google-ads
 // 请将以下代码放到欲加载 backfill ads 页面的底部
 
