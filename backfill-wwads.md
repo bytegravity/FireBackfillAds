@@ -1,4 +1,4 @@
-谷歌广告的填充率不是 100% 的，这意味着您的用户可能有时候看不到广告，当谷歌广告系统未填充广告时，其广告填充与否参数即 `data-ad-status` 的值为 `unfilled`，您可以利用此功能在谷歌广告未填充时使用万维广告填充。
+谷歌 Adsense 广告的填充率不是 100% 的，这意味着您的用户可能有时候看不到广告，当谷歌广告系统未填充广告时，其 [广告填充与否参数](https://support.google.com/adsense/answer/10762946?hl=zh-Hans) 即 `data-ad-status` 的值为 `unfilled`，您可以利用此功能在谷歌广告未填充时使用万维广告填充。
 
 参考代码如下：
 
@@ -15,7 +15,7 @@
     var interval = setInterval(function () {
       if (document.querySelector('.adsbygoogle').getAttribute('data-ad-status') === 'unfilled') {
         clearInterval(interval);
-        const wwadsDiv = '<div class="wwads-cn wwads-vertical" data-id="你的万维广告单元 ID" style="max-width:300px;margin-top:0"></div>';
+        const wwadsDiv = '<div class="wwads-cn wwads-vertical" data-id="你的万维广告单元 ID" style="max-width:300px"></div>';
         document.querySelector('.adsbygoogle').outerHTML = wwadsDiv;
         const wwadsJs = document.createElement('script');
         wwadsJs.type = 'text/javascript';
